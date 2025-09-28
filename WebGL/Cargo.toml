@@ -1,7 +1,7 @@
 [package]
 authors = ["The wasm-bindgen Developers"]
 edition = "2021"
-name = "canvas"
+name = "webgl"
 publish = false
 version = "0.0.0"
 
@@ -14,4 +14,14 @@ js-sys = "0.3.81"
 
 [dependencies.web-sys]
 version = "0.3.81"
-features = ['CanvasRenderingContext2d', 'Document', 'Element', 'HtmlCanvasElement', 'Window']
+features = [
+  'Document',
+  'Element',
+  'HtmlCanvasElement',
+  'WebGlBuffer',
+  'WebGlVertexArrayObject',
+  'WebGl2RenderingContext',
+  'WebGlProgram',
+  'WebGlShader',
+  'Window',
+]
