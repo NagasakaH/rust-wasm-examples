@@ -66,6 +66,7 @@ jobs:
     # 8. インデックスページの作成
     - name: Create index page
       run: |
+        mkdir -p dist/
         cat > dist/index.html << 'EOF'
         <!DOCTYPE html>
         <html lang="ja">
